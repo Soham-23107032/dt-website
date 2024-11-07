@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Slot Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .time-slot {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        .time-slot:hover {
+            transform: scale(1.05);
+            background-color: #f1f1f1;
+        }
+
+        .time-slot p {
+            margin: 0;
+            color: #555;
+            font-size: 1em;
+        }
+
+        .book-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #28a745;
+            color: white;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .book-btn:hover {
+            background-color: #218838;
+        }
+
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            }
+
+            .time-slot {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Available Time Slots</h1>
+
+    <div class="grid-container">
+        <div class="time-slot">
+            <p>Today - 10:00 AM</p>
+            <a href="booking-form.html" class="book-btn">Book Slot</a>
+        </div>
+        <div class="time-slot">
+            <p>Today - 11:00 AM</p>
+            <a href="booking-form.html" class="book-btn">Book Slot</a>
+        </div>
+        <div class="time-slot">
+            <p>Tomorrow - 09:00 AM</p>
+            <a href="booking-form.html" class="book-btn">Book Slot</a>
+        </div>
+        <div class="time-slot">
+            <p>Tomorrow - 10:00 AM</p>
+            <a href="booking-form.html" class="book-btn">Book Slot</a>
+        </div>
+        <div class="time-slot">
+            <p>Day After - 10:00 AM</p>
+            <a href="booking-form.html" class="book-btn">Book Slot</a>
+        </div>
+        <div class="time-slot">
+            <p>Day After - 11:00 AM</p>
+            <a href="booking-form.html" class="book-btn">Book Slot</a>
+        </div>
+    </div>
+
+</body>
+</html>
